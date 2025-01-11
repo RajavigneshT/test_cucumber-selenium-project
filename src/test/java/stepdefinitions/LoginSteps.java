@@ -10,7 +10,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
 public class LoginSteps {
-	// WebDriver driver;
 	WebDriver driver = Hooks.driver; // Access the shared driver instance
 
 	@Given("I am on the login page")

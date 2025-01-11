@@ -1,0 +1,11 @@
+# Ignore Eclipse project files
+/.project
+/.classpath
+/.settings/
+
+# Ignore Maven target directory
+/target/
+
+# Ignore IDE-specific files
+*.iml
+.idea/
