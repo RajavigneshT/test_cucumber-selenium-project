@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import common.constatns;
 import hooks.Hooks;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -23,6 +24,8 @@ public class LoginSteps {
 		driver.findElement(By.xpath("//textarea[@aria-label=\"Search\"]")).sendKeys(enteredname);
 		WebElement clickSearch = driver.findElement(By.xpath("//textarea[@aria-label=\"Search\"]"));
 		clickSearch.sendKeys(Keys.ENTER);
+		String title="TestMqvars";
+		constatns.mqVars.put("homePageTitle",title);
 	}
 
 }

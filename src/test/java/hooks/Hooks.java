@@ -2,6 +2,8 @@ package hooks;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import common.constatns;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
@@ -25,6 +27,7 @@ public class Hooks {
 
 	@After
 	public void tearDown() {
+		System.out.println(constatns.mqVars.get("homePageTitle"));
 		System.out.println("Closing Firefox browser");
 
 		// Quit the WebDriver instance
