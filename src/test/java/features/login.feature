@@ -1,6 +1,6 @@
 Feature: Login Functionality
-@rv
+    @Ecomweb
     Scenario: Successful login with valid credentials
     Given I am on the login page
-    Then enter text "Rajavignesh"
+    Then enter text "apple iphone 17"
    
