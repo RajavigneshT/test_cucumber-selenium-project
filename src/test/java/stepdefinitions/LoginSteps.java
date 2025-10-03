@@ -17,12 +17,17 @@ import utlity.*;
 public class LoginSteps {
 	WebDriver driver = Hooks.driver; // Access the shared driver instance
 
-	@Given("I am on the login page")
-	public void i_am_on_the_login_page() throws InterruptedException {
+	@Given("I am on the landingpage")
+	public void i_am_on_the_landingpage() throws InterruptedException {
 		//driver.get("http://Google.com");
-		driver.get("https://www.flipkart.com/");
+		driver.get("https://care-techfest-2025.netlify.app/#");
 		Library library = new Library();
-		library.takeScreenshot("Login Page");
+		library.takeScreenshot("LandingPage");
+		Thread.sleep(1000);
+		String buttontex=driver.findElement(By.xpath("//*[@id=\"enter-btn\"]")).getText();
+		System.out.println("Button Name :::::"+buttontex);
+		
+		driver.findElement(By.xpath("//*[@id=\"enter-btn\"]")).click();
 		
 		
 		//System.out.println("Hello There");

@@ -15,7 +15,7 @@ public class Library extends Hooks {
 
 	public void takeScreenshot(String screenShotName) {
 
-		String timestamp = new SimpleDateFormat("yyyyMMdd_HH:mm:ss").format(new Date());
+		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 		String screenshotName = screenShotName + "_" + timestamp + ".png";
 
 		String screenshotDiretroy = "./testdata/screenshot";
@@ -36,6 +36,9 @@ public class Library extends Hooks {
 
 		}
 
+	}
+	public void testSeleniumMethod() {
+		
 	}
 
 }
