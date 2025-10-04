@@ -19,15 +19,15 @@ public class LoginSteps {
 
 	@Given("I am on the landingpage")
 	public void i_am_on_the_landingpage() throws InterruptedException {
-		//driver.get("http://Google.com");
-		driver.get("https://care-techfest-2025.netlify.app/#");
+		driver.get("https://www.amazon.in/");
+		//driver.get("https://www.flipkart.com/");
 		Library library = new Library();
 		library.takeScreenshot("LandingPage");
 		Thread.sleep(1000);
-		String buttontex=driver.findElement(By.xpath("//*[@id=\"enter-btn\"]")).getText();
-		System.out.println("Button Name :::::"+buttontex);
+		//String buttontex=driver.findElement(By.xpath("//*[@id=\"enter-btn\"]")).getText();
+		//System.out.println("Button Name :::::"+buttontex);
 		
-		driver.findElement(By.xpath("//*[@id=\"enter-btn\"]")).click();
+		//driver.findElement(By.xpath("//*[@id=\"enter-btn\"]")).click();
 		
 		
 		//System.out.println("Hello There");

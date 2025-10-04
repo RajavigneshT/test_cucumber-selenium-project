@@ -1,5 +1,5 @@
+stepdefinitions\LoginSteps.class
 utlity\Library.class
 common\constatns.class
-stepdefinitions\LoginSteps.class
 hooks\Hooks.class
 runner\TestRunner.class
